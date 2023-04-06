@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyboardHookSample", "KeyboardHookSample\KeyboardHookSample.vcxproj", "{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Debug|x64.ActiveCfg = Debug|x64
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Debug|x64.Build.0 = Debug|x64
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Debug|x86.ActiveCfg = Debug|Win32
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Debug|x86.Build.0 = Debug|Win32
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Release|x64.ActiveCfg = Release|x64
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Release|x64.Build.0 = Release|x64
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Release|x86.ActiveCfg = Release|Win32
+		{3A1AE1F7-C920-4AFE-830D-4C4A160A5DC2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C7AA2E1-6034-438D-B308-FA2B22DDF882}
+	EndGlobalSection
+EndGlobal
