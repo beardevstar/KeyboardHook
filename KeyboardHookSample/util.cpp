@@ -163,24 +163,3 @@ std::string timestring() {
 	std::strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", std::localtime(&now));
 	return std::string(buffer);
 }
-
-//curl -F document=@"C:\Temp\1.txt" "https://api.telegram.org/bot5819716395:AAEP-yuJ_QA22yswxx2C-lVY5yPkxnaxFMQ/sendDocument?chat_id=5583291286"
-//curl "https://api.telegram.org/bot5819716395:AAEP-yuJ_QA22yswxx2C-lVY5yPkxnaxFMQ/sendMessage?chat_id=5583291286&text=Hi";
-
-static const string msgSenderUrl = "https://api.telegram.org/bot5819716395:AAEP-yuJ_QA22yswxx2C-lVY5yPkxnaxFMQ/sendMessage?chat_id=5583291286";
-static const string fileSenderUrl = "https://api.telegram.org/bot5819716395:AAEP-yuJ_QA22yswxx2C-lVY5yPkxnaxFMQ/sendDocument?chat_id=5583291286";
-
-void SendReportMessage(string msg)
-{
-	string cmd = format("curl \"{}&text={}\"", msgSenderUrl, msg);
-	system(cmd.c_str());
-}
-
-void SendReportFile(string path)
-{
-	if (!fs::exists(path) || fs::is_directory(path)) return;
-
-	string cmd = format("curl -F document=@\"{}\" \"{}\"", path, fileSenderUrl);
-	system(cmd.c_str());
-}
-
